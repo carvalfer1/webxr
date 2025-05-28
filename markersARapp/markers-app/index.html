@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    
+
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <div id='console-ui'></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      var el = document.createElement('div');
+      el.setAttribute('id','pepito')
+      
+      document.body.appendChild(el);
+      eruda.init({
+        container: el,
+        tool: ['console', 'elements']
+      });</script>
+  </body>
+</html>
